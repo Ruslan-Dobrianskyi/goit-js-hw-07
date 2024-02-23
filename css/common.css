@@ -211,6 +211,10 @@ ul#categories ul {
   color: #fff;
 }
 
+.btn-crt:hover {
+  background: #6c8cff;
+}
+
 .btn-dest {
   border-radius: 8px;
   padding: 8px 16px;
@@ -219,6 +223,9 @@ ul#categories ul {
   background: #ff4e4e;
   border: none;
   color: #fff;
+}
+.btn-dest:hover {
+  background: #ff7070;
 }
 
 .form-six {
