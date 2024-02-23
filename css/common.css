@@ -13,8 +13,232 @@ body {
   line-height: 1.5;
 }
 
-.gallery {
+input {
+  padding: 8px;
+  font: inherit;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* task1 */
+ul#categories {
+  max-width: 440px;
+  display: inline-flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.96px;
+}
+
+ul#categories ul {
   display: flex;
-  gap: 50px;
+  flex-direction: column;
+  gap: 8px;
+}
+.item {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+
+  border-radius: 8px;
+  background: #f6f6fe;
+}
+
+.item li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  width: 360px;
+  padding: 8px 16px 8px 16px;
+}
+
+.login-form {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 256px;
+  background: #f6f6fe;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.gallery {
+  width: 1440px;
+  height: 848px;
+  padding: 100px 130px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 64px 24px;
   list-style-type: none;
+}
+/* task 3 */
+.form-three {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 136px;
+  background: #fff;
+}
+
+.hidd-word {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* task4 */
+
+.btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+  color: #fff;
+  border: none;
+}
+
+.btn:hover {
+  background: #6c8cff;
+}
+
+.forms-task4 {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+.form-four {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 256px;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 256px;
+  background: #f6f6fe;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+/* task 5 */
+.widget {
+  border-radius: 8px;
+  padding: 100px 88px;
+  width: 345px;
+  height: 280px;
+  background: #fff;
+}
+
+.change-color {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+  color: #fff;
+}
+
+/* task 6  */
+
+.container {
+  border-radius: 8px;
+  padding: 24px;
+  width: 534px;
+  height: 328px;
+  background: #fff;
+}
+
+.btn-crt {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+  color: #fff;
+}
+
+.btn-dest {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #ff4e4e;
+  border: none;
+  color: #fff;
+}
+
+.form-six {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 72px;
+  width: 150px;
+  height: 40px;
+  padding: 0 55px;
+}
+
+.box {
+  margin-top: 30px;
+  display: flex;
+}
+
+.cont-input-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }

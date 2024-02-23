@@ -24,29 +24,53 @@ const images = [
   },
   {
     url: "https://images.pexels.com/photos/37833/rainbow-lorikeet-parrots-australia-rainbow-37833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    alt: "Blue Geeen and Orange Parrot",
+    alt: "Blue Green and Orange Parrot",
   },
   {
     url: "https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     alt: "Zebras on Zebra",
   },
 ];
+
 const colorPickerContainerEl = document.querySelector(".gallery");
 
-const myElems = [];
+const myPhotos = [];
 
 for (const obj of images) {
   const myElem = document.createElement("li");
-
   const firstChild = document.createElement("img");
-  firstChild.style.width = "200px";
-  firstChild.style.height = "200px";
+
+  firstChild.style.width = "300px";
+  firstChild.style.height = "300px";
   firstChild.src = obj.url;
   firstChild.alt = obj.alt;
 
   myElem.append(firstChild);
 
-  myElems.push(myElem);
+  myPhotos.push(myElem);
 }
 
-colorPickerContainerEl.append(...myElems);
+colorPickerContainerEl.append(...myPhotos);
+
+// Another method
+// ===========================================================================
+
+// function cardList(img) {
+//   return `<li>
+//         <img
+//           src=${img.url}
+//           alt=${img.alt}
+//           width="300"
+//           height="300"
+//         />
+//       </li>
+//       </li>
+// `;
+// }
+
+// function cardsList(arr) {
+//   const markup = arr.map(cardList).join("\n\n");
+//   return markup;
+// }
+
+// colorPickerContainerEl.innerHTML = cardsList(images);
